@@ -1,0 +1,12 @@
+personal notes:
+to run needed python 3.11.* where normally i have 3.12.* by default
+
+so needed to brew install the following
+brew install pyenv
+brew install pyenv-virtualenv
+
+then needed to use virtualenv instead of my usual venv way
+so 
+pyenv init ( once off and put the results in the .zsh file)
+pyenv virtualenv 3.11.7 envname ( this is stored not local in the project so need to be more specific with the names)
+then use the cli help of pyenv to figure out the rest
