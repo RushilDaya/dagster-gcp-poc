@@ -286,6 +286,15 @@ dagster-user-deployments:
 
   # List of unique deployments
   deployments:
+    - name: "rushil-example"
+      image:
+        repository: "us-west1-docker.pkg.dev/rushil-daya/rushil-repo/dagster-test"
+        tag: latest
+        pullPolicy: Always
+      dagsterApiGrpcArgs:
+        - "--python-file"
+        - "definitions.py"
+      port: 3030
     - name: "k8s-example-user-code-1"
       image:
         # When a tag is not supplied, it will default as the Helm chart version.
